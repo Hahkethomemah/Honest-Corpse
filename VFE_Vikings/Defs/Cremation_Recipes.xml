@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<RecipeDef>
+		<defName>DeathRitualPyre</defName>
+			<label>Perform a ritual of death</label>
+			<description>Perform a ritual incineration of the remains, wailing mournfully. Collect the lye afterwards.</description>
+				<jobString>Performing funeral rites</jobString>
+							<workAmount>420</workAmount>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<autoStripCorpses>true</autoStripCorpses>
+							<workSkill>Artistic</workSkill>
+							<workSkillLearnFactor>0.25</workSkillLearnFactor>
+							<ingredients>
+							  <li>
+								<filter>
+								  <categories>
+									<li>Corpses</li>
+								  </categories>
+								</filter>
+								<count>1</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <categories>
+								<li>Corpses</li>
+							  </categories>
+							  <disallowedCategories>
+										<li>CorpsesMechanoid</li>
+									</disallowedCategories>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>
+							  <thingDefs>
+								<li>Corpse_Human</li>
+							  </thingDefs>
+							  <specialFiltersToAllow>
+								<li>AllowCorpsesStranger</li>
+							  </specialFiltersToAllow>
+							</defaultIngredientFilter>
+								<products>
+									<Chemfuel>10</Chemfuel>
+								</products>
+							<recipeUsers>
+									<li>VFEV_FuneralPyre</li>
+								</recipeUsers>
+						  </RecipeDef>
+
+						<RecipeDef>
+							<defName>DeathRitualPyreNoStrip</defName>
+							<label>Perform a ritual of passage</label>
+							<description>Perform a ritual incineration of the remains, wailing mournfully. Let the deceased continue their journey in the afterlife with their belongings. Collect the lye afterwards.</description>
+							<jobString>Performing funeral rites
+							</jobString>
+							<workAmount>600</workAmount>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<autoStripCorpses>false</autoStripCorpses>
+							<workSkill>Artistic</workSkill>
+							<workSkillLearnFactor>0.25</workSkillLearnFactor>
+							<ingredients>
+							  <li>
+								<filter>
+								  <categories>
+									<li>Corpses</li>
+								  </categories>
+								</filter>
+								<count>1</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <categories>
+								<li>Corpses</li>
+							  </categories>
+							  <disallowedCategories>
+										<li>CorpsesMechanoid</li>
+									</disallowedCategories>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>
+							  <thingDefs>
+								<li>Corpse_Human</li>
+							  </thingDefs>
+							  <specialFiltersToAllow>
+								<li>AllowCorpsesStranger</li>
+							  </specialFiltersToAllow>
+							</defaultIngredientFilter>
+								<products>
+									<Chemfuel>10</Chemfuel>
+								</products>
+							<recipeUsers>
+									<li>VFEV_FuneralPyre</li>
+								</recipeUsers>
+						</RecipeDef>
+</Defs>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+	<Defs>
+		<RecipeDef>
+			<defName>MakeFertilizerAtCrematorium</defName>
+				<label>Turn into fertilizer</label>
+					<description>Set lower temperature so that the ashes retain as much fertilizing properties as possible.</description>
+						<jobString>Mushing corpse to a pulp.
+							</jobString>
+							<workAmount>420</workAmount>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<autoStripCorpses>true</autoStripCorpses>
+							<workSkill>Intellectual</workSkill>
+							<workSkillLearnFactor>0.25</workSkillLearnFactor>
+							<ingredients>
+							  <li>
+								<filter>
+								  <categories>
+									<li>Corpses</li>
+								  </categories>
+								</filter>
+								<count>1</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <categories>
+								<li>Corpses</li>
+							  </categories>
+							  <disallowedCategories>
+										<li>CorpsesMechanoid</li>
+									</disallowedCategories>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>
+							  <thingDefs>
+								<li>Corpse_Human</li>
+							  </thingDefs>
+							  <specialFiltersToAllow>
+								<li>AllowCorpsesStranger</li>
+							  </specialFiltersToAllow>
+							</defaultIngredientFilter>
+							<products>
+									<Biosolids>25</Biosolids>
+								</products>
+							<recipeUsers>
+									<li>ElectricCrematorium</li>
+								</recipeUsers>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>MakeFertilizerAtCrematoriumNoStrip</defName>
+							<label>Turn into fertilizer (don't strip)</label>
+							<description>Set lower temperature so that the ashes retain as much fertilizing properties as possible. Take extra time to burn the apparel as well.</description>
+							<jobString>Mushing corpse to a pulp.
+							</jobString>
+							<workAmount>600</workAmount>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<autoStripCorpses>false</autoStripCorpses>
+							<workSkill>Intellectual</workSkill>
+							<workSkillLearnFactor>0.25</workSkillLearnFactor>
+							<ingredients>
+							  <li>
+								<filter>
+								  <categories>
+									<li>Corpses</li>
+								  </categories>
+								</filter>
+								<count>1</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <categories>
+								<li>Corpses</li>
+							  </categories>
+							  <disallowedCategories>
+										<li>CorpsesMechanoid</li>
+									</disallowedCategories>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>
+							  <thingDefs>
+								<li>Corpse_Human</li>
+							  </thingDefs>
+							  <specialFiltersToAllow>
+								<li>AllowCorpsesStranger</li>
+							  </specialFiltersToAllow>
+							</defaultIngredientFilter>
+							<products>
+									<Biosolids>25</Biosolids>
+								</products>
+							<recipeUsers>
+									<li>ElectricCrematorium</li>
+								</recipeUsers>
+						</RecipeDef>
+	</Defs>
